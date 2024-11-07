@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electricity Usage & Environmental Impact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <h1>Electricity & Environment</h1>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#reduction">Reduction Tips</a></li>
+        <li><a href="#tools">Calculators</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Electricity Usage and Its Environmental Impact</h2>
+    <p>Explore how electricity impacts the environment and learn how you can reduce your usage with our tools.</p>
+    <button onclick="scrollToSection('overview')">Learn More</button>
+  </section>
+
+  <!-- Overview Section -->
+  <section id="overview" class="section">
+    <h3 style="color: greenyellow;">Overview of Electricity Usage</h3>
+    <p style="color: white;">Electricity usage, measured in kilowatt-hours (kWh), is key to managing energy costs, boosting efficiency, and reducing carbon emissions. It’s affected by appliance power ratings, usage duration, and frequency, with high-wattage devices like air conditioners and refrigerators having a larger impact. Average household usage ranges from 500-1000 kWh monthly, covering essentials like lighting, heating, and cooling. Electric vehicles (EVs) add to this demand, consuming 0.2 to 0.4 kWh per mile. Reducing electricity consumption helps cut costs and carbon footprints, especially in fossil-fuel-dependent areas. Efficient appliances, unplugging idle devices, and monitoring usage are effective strategies to save on costs and lower environmental impact.
+
+
+
+
+
+
+    </p>
+    <div class="cards">
+      <div id="div4" class="card">
+        <h4 style="color: black;">Sources of Electricity</h4>
+        <ul>
+          <li><strong>Fossil Fuels:</strong> Non-renewable, produces greenhouse gases.</li><br>
+          <li><strong>Nuclear Energy:</strong> Low emissions, but with disposal challenges.</li><br>
+          <li><strong>Renewables:</strong> Eco-friendly sources like solar, wind, and hydro.</li><br>
+          <li><strong>Geothermal Energy:</strong> Geothermal plants tap into heat from the Earth’s core to produce steam, which powers turbines. It’s a stable and low-emission source but only feasible in areas with geothermal activity.</li><br>
+          <li><strong>Biomass:</strong> Organic materials like wood, agricultural waste, and biofuels are burned to generate electricity. Biomass is renewable and can utilize waste materials, but it releases CO₂ and can compete with food sources.</li>
+        </ul>
+      </div>
+      <div id="div5" class="card">
+        <h4 style="color: black;" >Global Consumption</h4>
+        <p>With rising demand, global electricity consumption reached over 25,000 TWh in 2021. This increased usage stresses natural resources and raises greenhouse gas emissions.</p>
+        <ul>
+            <li><strong>Population Growth:</strong> As global population rises, so does the demand for electricity, with more people needing power for homes, businesses, and infrastructure.</li><br>
+            <li><strong>Digitalization and Electrification:</strong> The rise of digital devices, data centers, and the electrification of sectors like transportation (e.g., electric vehicles) contribute significantly to increased demand.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Environmental Impact Section -->
+  <section id="impact" class="section">
+    <h3 style="color: greenyellow;">Environmental Impact of Electricity</h3>
+    <p style="color: white;" >Electricity production is a leading 
+      contributor to environmental degradation:</p>
+    <ul style="color: white;">
+     <li><strong>Fuels (Coal, Oil, Natural Gas):</strong> High CO₂ emissions, significant air and water pollution, major contributor to climate change.</li>
+     <li><strong>Nuclear Power:</strong> Low emissions but generates long-lasting radioactive waste; risks from potential accidents.</li>
+     <li><strong>Renewables (Solar, Wind, Hydro):</strong> Minimal emissions; generally cleaner, though can disrupt ecosystems (e.g., habitat loss, water use) if not carefully managed.</li>
+     <li><strong>Transmission and Storage:</strong> Power lines and batteries affect land and water resources and can disturb local ecosystems.</li>
+     <li><strong>Environmental Impact of Renewables:</strong> Transitioning to renewable sources is essential to reducing pollution, conserving resources, and mitigating climate change.</li>
+    </ul>
+  </section>
+
+  <!-- Tips Section -->
+  <section id="reduction" class="section">
+    <h3>Ways to Reduce Electricity Usage</h3>
+    <div class="tips">
+      <div id="div1">
+        
+        <h4>Switch to Energy-Efficient Appliances</h4>
+        <p>LED Bulbs: Replace incandescent bulbs with energy-efficient LED bulbs, which use up to 85% less energy.</p><br>
+        <p>Energy Star-rated Appliances: Look for appliances that are Energy Star certified, indicating they use less energy without compromising on performance.</p>
+      </div>
+      <div id="div2" >
+        <h4>Switch to Solar Energy</h4>
+        <p>Installing solar panels on your roof can significantly reduce your reliance on grid electricity, especially if you live in a sunny area.</p>
+        <p>Environmental Benefits: Solar energy is a clean, renewable energy source that produces no greenhouse gas emissions, helping to reduce your carbon footprint and combat climate change.
+
+
+
+
+
+
+        </p>
+      </div>
+      <div id="div3">
+        <h4>Cook Efficiently</h4>
+        <p>Use microwaves, slow cookers, or pressure cookers to save energy, as they use less power than ovens or stovetops.</p>
+        <p>When using the oven, try to cook multiple items at once to maximize energy use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Tools Section -->
+  <section id="tools" class="section">
+    <h3 style="color: greenyellow;">Electricity Calculators</h3>
+    <p style="color: white;">Explore our calculators to better understand and manage your electricity usage.</p>
+
+    <!-- Carbon Footprint Calculator -->
+    <div class="calculator">
+      <h4>Carbon Footprint Calculator</h4>
+      <label for="electricity-usage">Monthly Electricity Usage (kWh):</label>
+      <input type="number" id="electricity-usage" placeholder="Enter monthly kWh usage">
+      <button onclick="calculateFootprint()">Calculate Carbon Footprint</button>
+      <p id="footprint-result"></p>
+    </div>
+
+    <!-- Electricity Cost Calculator -->
+    <div class="calculator">
+      <h4>Electricity Cost Calculator</h4>
+      <label for="cost-usage">Monthly Electricity Usage (kWh):</label>
+      <input type="number" id="cost-usage" placeholder="Enter kWh usage">
+      <label for="rate">Rate per kWh (in $):</label>
+      <input type="number" id="rate" placeholder="Enter rate per kWh">
+      <button onclick="calculateCost()">Calculate Cost</button>
+      <p id="cost-result"></p>
+    </div>
+
+    <!-- Power Consumption Calculator -->
+    <div class="calculator">
+      <h4>Power Consumption Calculator</h4>
+      <label for="wattage">Device Wattage (W):</label>
+      <input type="number" id="wattage" placeholder="Enter device wattage">
+      <label for="hours">Usage Hours per Day:</label>
+      <input type="number" id="hours" placeholder="Enter hours used per day">
+      <button onclick="calculateConsumption()">Calculate Power Consumption</button>
+      <p id="consumption-result"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Electricity & Environment. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

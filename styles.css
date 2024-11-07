@@ -1,0 +1,314 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: url(image5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Header & Navbar */
+  header {
+    background-color: #1e293b;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  header ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header ul li {
+    margin: 0 10px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition: background-color 0.3s;
+  }
+  
+  header ul li a:hover {
+    background-color: #4caf50;
+    border-radius: 5px;
+  }
+  #overview{
+    color: white;
+  }
+
+  
+  
+  /* Hero Section */
+  .hero {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+    background-image: url(./image4.pn);
+    background-size: cover;
+  }
+  
+  .hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .hero button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 20px;
+  }
+  
+  .section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Cards */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .card {
+    flex: 1 1 45%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h4 {
+    color: #4caf50;
+    margin-bottom: 15px;
+  }
+  
+  .card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+  }
+  
+  .card p {
+    color: #666;
+  }
+  
+  /* Calculator Styling */
+  .calculator {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9f5f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .calculator:hover {
+    transform: scale(1.02);
+  }
+  
+  .calculator h4 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .calculator label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .calculator input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .calculator button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .calculator button:hover {
+    background-color: #388e3c;
+  }
+  
+  .calculator p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  /* Tips Section */
+  .tips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .tips div {
+    flex: 1 1 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tips h4 {
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .tips p {
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+    
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cards, .tips {
+      flex-direction: column;
+    }
+    
+    .calculator button {
+      font-size: 0.9rem;
+    }
+  }
+  #div1{
+    transition: all 0.3s ease-in 0s;
+  }
+  #div1:hover{
+    scale: 1.04;
+    background-color: rgba(166, 246, 46,0.7);
+    
+  }
+
+  #div2{
+    transition: all 0.3s ease-in 0s;
+  }
+  #div2:hover{
+    scale: 1.04;
+    background-color: rgba(166, 246, 46,0.7);
+    
+  }
+  #div3{
+    transition: all 0.3s ease-in 0s;
+  }
+  #div3:hover{
+    scale: 1.04;
+    background-color: rgba(166, 246, 46,0.7);
+    
+  }
+  #div4{
+    transition: all 0.3s ease-in 0s;
+  }
+  #div4:hover{
+    scale: 1.04;
+    background-color: rgba(166, 246, 46,0.7);
+    
+  }
+  #div5{
+    transition: all 0.3s ease-in 0s;
+  }
+  #div5:hover{
+    scale: 1.04;
+    background-color: rgba(166, 246, 46,0.7);
+    
+  }
